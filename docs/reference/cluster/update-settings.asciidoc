@@ -56,6 +56,9 @@ For this reason it is preferrable to  use the `elasticsearch.yml` file only
 for local configurations, and set all cluster-wider settings with the
 `settings` API.
 
+In case of differing `elasticsearch.yml` settings across nodes in the cluster,
+the settings on the current, elected master are used.
+
 A list of dynamically updatable settings can be found in the
 <<modules,Modules>> documentation.
 
